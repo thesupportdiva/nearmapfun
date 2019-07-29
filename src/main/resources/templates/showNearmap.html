@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show message</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1><a th:href="${nearmap.url}" target="_blank">Your Map!</a></h1>
+<p th:text="'Latitude: ' + ${nearmap.latitude}"></p>
+<p th:text="'Longitude: ' + ${nearmap.longitude}"></p>
+<a href="/addNearmap">Submit another map</a>
+</body>
+</html>
